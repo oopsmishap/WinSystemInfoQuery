@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ntdll">
+      <UniqueIdentifier>{fc9c232a-90da-469c-8246-8f4dc97fe325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sysinfo">
+      <UniqueIdentifier>{703a5d2b-d5f9-4c6a-86b6-1fc73d342d97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{f9a9507f-0a9d-458a-8967-024c37c7e156}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ntdll\devioctl.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntamd64.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntdef.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntdll.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntexapi.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\nti386.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntia64.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntioapi.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntkeapi.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntldr.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntmmapi.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntnls.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntpfapi.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntpsapi.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntregapi.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntrtl.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntrtlpath.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntrtlstringandbuffer.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntseapi.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\ntstatus.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\nturtl.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\nxamd64.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\nxi386.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\pebteb.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="ntdll\pshpck16.h">
+      <Filter>ntdll</Filter>
+    </ClInclude>
+    <ClInclude Include="sysinfo\sysinfo.hpp">
+      <Filter>sysinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="sysinfo\SystemExtendedProcessInformation.hpp">
+      <Filter>sysinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="sysinfo\SystemHandleInformation.hpp">
+      <Filter>sysinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="sysinfo\SystemModuleInformation.hpp">
+      <Filter>sysinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="sysinfo\SystemPageFileInformation.hpp">
+      <Filter>sysinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="sysinfo\SystemProcessInformation.hpp">
+      <Filter>sysinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="sysinfo\WinSystemInfoQuery.hpp">
+      <Filter>sysinfo</Filter>
+    </ClInclude>
+    <ClInclude Include="util\print.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+</Project>
