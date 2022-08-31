@@ -56,7 +56,7 @@ public:
             auto handle = buffer->Handles[ i ];
 
             fmt::println( "UniqueProcessId: {}", uint64_t( handle.UniqueProcessId ) );
-            fmt::println( "- ObjectTypeIndex:  {}", uint8_t( handle.UniqueProcessId ) );
+            fmt::println( "- ObjectTypeIndex:  {}", uint8_t( handle.ObjectTypeIndex ) );
             fmt::println( "- HandleAttributes: {}", uint8_t( handle.HandleAttributes ) );
             fmt::println( "- HandleValue:      {:#x}", uint16_t( handle.HandleValue ) );
             fmt::println( "- Object:           {}", handle.Object );
@@ -86,7 +86,7 @@ public:
                 continue;
 
             fmt::println( "UniqueProcessId: {}", uint64_t( handle.UniqueProcessId ) );
-            fmt::println( "- ObjectTypeIndex:  {}", uint8_t( handle.UniqueProcessId ) );
+            fmt::println( "- ObjectTypeIndex:  {}", uint8_t( handle.ObjectTypeIndex ) );
             fmt::println( "- HandleAttributes: {}", uint8_t( handle.HandleAttributes ) );
             fmt::println( "- HandleValue:      {:#x}", uint16_t( handle.HandleValue ) );
             fmt::println( "- EProcess:         {}", handle.Object );

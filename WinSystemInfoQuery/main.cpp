@@ -35,7 +35,7 @@ int main( int argc, char* argv[] )
 
     NT_FUNC_FAILURE( handleinfo_query.exec(), "SystemHandleInformationQuery" );
 
-    handleinfo_query.print_own_eprocess();
+    handleinfo_query.print_eprocesses();
 
     /*
      * ----------------------------------------------
