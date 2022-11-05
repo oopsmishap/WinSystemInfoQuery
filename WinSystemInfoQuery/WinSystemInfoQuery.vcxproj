@@ -143,6 +143,7 @@
       <ConformanceMode>true</ConformanceMode>
       <ExceptionHandling>Sync</ExceptionHandling>
       <BufferSecurityCheck>false</BufferSecurityCheck>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -180,6 +181,9 @@
     <ClInclude Include="ntdll\pebteb.h" />
     <ClInclude Include="ntdll\pshpck16.h" />
     <ClInclude Include="sysinfo\WinSystemInfoQuery.hpp" />
+    <ClInclude Include="tokeninfo\tokeninfo.hpp" />
+    <ClInclude Include="tokeninfo\TokenPrivileges.hpp" />
+    <ClInclude Include="tokeninfo\WinTokenInfoQuery.hpp" />
     <ClInclude Include="util\print.hpp" />
     <ClInclude Include="sysinfo\sysinfo.hpp" />
     <ClInclude Include="sysinfo\SystemExtendedProcessInformation.hpp" />
@@ -187,6 +191,7 @@
     <ClInclude Include="sysinfo\SystemModuleInformation.hpp" />
     <ClInclude Include="sysinfo\SystemPageFileInformation.hpp" />
     <ClInclude Include="sysinfo\SystemProcessInformation.hpp" />
+    <ClInclude Include="util\utils.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

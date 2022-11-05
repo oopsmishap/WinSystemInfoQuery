@@ -1,4 +1,5 @@
 #include "sysinfo/sysinfo.hpp"
+#include "tokeninfo/tokeninfo.hpp"
 
 #define NT_FUNC_FAILURE( s, n ) \
     do {                                                        \
@@ -31,11 +32,11 @@ int main( int argc, char* argv[] )
      * ----------------------------------------------
      */
 
-    SystemHandleInformationQuery handleinfo_query;
+    /*SystemHandleInformationQuery handleinfo_query;
 
     NT_FUNC_FAILURE( handleinfo_query.exec(), "SystemHandleInformationQuery" );
 
-    handleinfo_query.print_eprocesses();
+    handleinfo_query.print_info();*/
 
     /*
      * ----------------------------------------------
@@ -84,4 +85,23 @@ int main( int argc, char* argv[] )
      //NT_FUNC_FAILURE( pagefileinfo_query.exec(), "SystemPageFileInfomationQuery" );
 
      //pagefileinfo_query.print_info();
+
+    /*
+     * ----------------------------------------------
+     * TokenPrivilleges
+     * ----------------------------------------------
+     */
+
+    HANDLE token_handle;
+
+    NT_FUNC_FAILURE( 
+        NtOpenProcessToken( NtCurrentProcess(), TOKEN_QUERY, &token_handle ), 
+        "Failed to get token" 
+    );
+
+    TokenPrivilegesQuery token_priv_query( token_handle );
+
+    NT_FUNC_FAILURE( token_priv_query.exec(), "TokenPrivilegesQuery" );
+
+    token_priv_query.print_info();
 }

@@ -111,6 +111,10 @@
     <ClInclude Include="util\print.hpp">
       <Filter>util</Filter>
     </ClInclude>
+    <ClInclude Include="tokeninfo\WinTokenInfoQuery.hpp" />
+    <ClInclude Include="tokeninfo\tokeninfo.hpp" />
+    <ClInclude Include="tokeninfo\TokenPrivileges.hpp" />
+    <ClInclude Include="util\utils.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
